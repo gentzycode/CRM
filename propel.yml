@@ -1,0 +1,19 @@
+propel:
+  database:
+    connections:
+      default:
+        adapter: mysql
+        dsn: 'mysql:host=127.0.0.1;dbname=churchapp'
+        user: 'gentzycode'
+        password: 'Gentzycode1234'
+  runtime:
+    defaultConnection: default
+    connections:
+      - default
+  generator:
+    defaultConnection: default
+    connections:
+      - default
+    objectModel:
+      defaultKeyType: phpName
+      addHooks: true
